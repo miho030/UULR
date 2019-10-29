@@ -1,4 +1,4 @@
-# Ubuntu  서버에서의 모든 중국 IP 대역 차단 프로그램
+# Universal Unix Log Remover 유닉스 기반 시스템 로그 자동 삭제 프로그램
 <hr/>
 Copyright 2019, Made By Misty; 한국인터넷진흥원 KUCIS
 23RD Infantry Division 직할대 정보통신대대 본부중대
