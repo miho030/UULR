@@ -1,0 +1,118 @@
+# _*_ coding:utf-8 _*_
+"""
+This Script followed GNU General Public License 3.0.
+So Anyone can modify this script for their own system environments.
+Use useful for you Unix system management skill. :P
+
+CopyRight all served @ Misty 20192019
+
+Create/Modifyed at 23rd infantry division; Signaller.
+
+"""
+
+# major lib define/import.
+import os,sys
+import os.path
+import platform
+from datetime import datetime
+
+
+# major var define.
+Platform_name = ""
+Platform_type = ""
+Platform_print = ""
+time_logging-1 = datetime.now() # Script start time.
+time_logging-2 = ""
+
+# Unix Log directory DB define. (var/log)
+UULR_DB = [
+    /var/log/messages,
+    /var/log/dmesg,
+    /var/log/auth.log,
+    /var/log/auth.log,
+    /var/log/boot.log,
+    /var/log/daemon.log,
+    /var/log/dpkg.log,
+    /var/log/kern.log,
+    /var/log/lastlog,
+    /var/log/maillog, 
+    /var/log/mail.log,
+    /var/log/maillog,
+    /var/log/user.log,
+    /var/log/Xorg.x.log,
+    /var/log/alternatives.log,
+    /var/log/btmp,
+    /var/log/cups,
+    /var/log/anaconda.log,
+    /var/log/yum.log,
+    /var/log/cron,
+    /var/log/secure,
+    /var/log/wtmp, 
+    /var/log/utmp,
+    /var/log/wtmp, /var/log/utmp
+    /var/log/faillog
+]
+
+# DB source :  https://sisiblog.tistory.com/24
+
+
+# Start UI define.
+print "/---------------------------------------------------/"
+print "/            Universal Unix Log Remover             /"
+print "/              GNU GPL OpenSource !! :P             /"
+print "/                                                   /"
+print "/  Public! Public! Public! Public! Public! :P       /"
+print "/----------------   Made By Misty   ----------------/"
+print "/---------------------------------------------------/"
+
+
+
+# Manufacture/print OS type and version for script executable.
+
+# Manufacture
+print "[!] ","Start the UULR!"
+print "[*] ", "Operating system check..."
+
+# Check the OS platform to use this script for Log clear.
+Platform_name = platform.platform()
+
+# Check the OS platform Type for show what os is you using.
+Platform_type = platform.system()
+
+print "[!] ", "Operating system check complete! :P"
+
+# Check the OS version and start script or shutdown script.
+if Platform_type == Windows:
+    print "[-] ", "Oops! You using Windows OS! Try again with Linux system!!!"
+    print "[!] ", "Try Again with Linux/Unix system!!"
+    sys.exit()
+else:
+    print "[*] ", "You are using", Platform_type, "Now! Good Job Let's see more fun...!"
+
+
+
+# check the log file which are correcta.
+
+DB = UULR_DB
+if os.path.isfile(DB):
+    print "[*] ", "No ploblem..! :D"
+else:
+    print "[-] ", "Something is wrong in your system!!"
+    print "[!] ", "/var/log files are now incorrect. check it!"
+
+    ui_input = raw_input("[XD] OR.... countinue what ever? [Y/N]")
+    if ui_input == "n" OR "N":
+        print "[X(] ", "See you later....."
+        sys.exit()
+    elif ui_input == "y" OR "Y":
+        print "[+] ", "Good Job! Let's start!!"
+    else:
+        print "[-] ", "You entered other value.......!!!!!!!"
+
+
+
+
+
+
+
+
