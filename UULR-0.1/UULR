@@ -53,6 +53,9 @@ UULR_DB = [
     /var/log/faillog
 ]
 
+# store checked log files
+ChDB = []
+
 # DB source :  https://sisiblog.tistory.com/24
 
 
@@ -95,9 +98,9 @@ else:
 
 DB = UULR_DB
 if os.path.isfile(DB):
+    append.ChDB()
     print "[*] ", "No ploblem..! :D"
 else:
-    print "[-] ", "Something is wrong in your system!!"
     print "[!] ", "/var/log files are now incorrect. check it!"
 
     ui_input = raw_input("[XD] OR.... countinue what ever? [Y/N]")
@@ -107,7 +110,8 @@ else:
     elif ui_input == "y" OR "Y":
         print "[+] ", "Good Job! Let's start!!"
     else:
-        print "[-] ", "You entered other value.......!!!!!!!"
+        print "[-] ", "You entered other value.......!!!!XDXD"
+        
 
 
 
