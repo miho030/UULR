@@ -70,3 +70,4 @@ UULR 핵심 기능 구현 작성.
 유닉스/리눅스 서버 로그 관리
 리눅스 로그 관리 프로그램
 유닉스 로그 관리 프로그램
+https://github.com/shipcod3/TuxLogCleaner/blob/master/tux_logcleaner.py
