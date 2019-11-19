@@ -1,7 +1,7 @@
 # Universal Unix Log Remover 유닉스 기반 시스템 로그 자동 삭제 프로그램
 <hr/>
 Copyright 2019, Made By Misty; 한국인터넷진흥원 KUCIS
-23RD Infantry Division 직할대 정보통신대대 본부중대
+23RD Infantry Division 정보통신대대 참모부 본부
 <hr/>
 
 ## 1. UULR을 만든 계기
