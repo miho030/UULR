@@ -8,6 +8,12 @@ CopyRight all served @ Misty 20192019
 
 Create/Modifyed at 23rd infantry division; Signaller.
 
+This program made for ONLY EDUCATIONAL purpose!!!!
+You Can modify this program for your own system environments.
+
+supplyed from GNU GPL3
+
+Expect us,
 """
 
 # major lib define/import.
@@ -155,9 +161,7 @@ def Main():
     print "[*] ", "Operating system check.../"
     
     
-    """
-    Check the user'system env & platform due to remove all logs.
-    """
+    # Check the user'system env & platform due to remove all logs.
     # Check the OS platform to use this script for Log clear.
     Platform_name = platform.platform()
     # Check the OS platform Type for show what os is you using.
