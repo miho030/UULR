@@ -1,29 +1,23 @@
 # _*_ coding:utf-8 _*_
 """
+written by Misty;KISA
+
 This Script followed GNU General Public License 3.0.
 So Anyone can modify this script for their own system environments.
 Use useful for you Unix system management skill. :P
 
-CopyRight all served @ Misty 20192019
-
-Create/Modifyed at 23rd infantry division; Signaller.
-
-This program made for ONLY EDUCATIONAL purpose!!!!
-You Can modify this program for your own system environments.
-
-supplyed from GNU GPL3
-
-Expect us,
+this script published with GPL3 ,
+you Can modify this program for your own system environments.
 """
 
-# major lib define/import.
+# major lib define/importment
 import os,sys
 import os.path
 import platform
 from datetime import datetime
 
 
-# major var define.
+# define major variables
 Platform_name = ""
 Platform_type = ""
 Platform_print = ""
@@ -157,7 +151,7 @@ def Main():
 
 
 
-    print "[!] ","Start the UULR!"
+    print "[!] ","Start the UULR"
     print "[*] ", "Operating system check.../"
     
     
